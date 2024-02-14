@@ -34,14 +34,14 @@ pipeline {
         stage('Test') {
             steps {
                 // Run your tests (e.g., unit tests, integration tests)
-                sh 'echo "In Test Step"'
+                echo "In Test Step"
             }
         }
 
         stage('Deploy') {
             steps {
                 // Deploy your application to a target environment (e.g., staging, production)
-                sh 'echo "Value of ENV Varaible is "$MY_ENV_VAR""'
+                echo "Value of ENV Varaible is "$MY_ENV_VAR"
             }
         }
     }
