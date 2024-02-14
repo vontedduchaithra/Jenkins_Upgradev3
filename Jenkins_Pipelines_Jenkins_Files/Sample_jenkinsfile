@@ -25,9 +25,9 @@ pipeline {
         stage('Build') {
             steps {
                 // Build your application here (e.g., compile, package, etc.)
-                sh '''
+                
                 echo "In Build Step"
-                '''
+            
             }
         }
 
